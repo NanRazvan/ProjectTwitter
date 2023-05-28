@@ -1,22 +1,34 @@
 # ProjectTwitter
-Ne propunem să recreem populara rețea de socializare Twitter. Un ochi atent va observa că orice rețea de socializare bazată pe postări text reprezintă fundația pentru alte rețele de socializare cu feature-uri mult mai complexe.
---------------------------------------------------------------------------------------------
+We propose to recreate the popular social networking platform Twitter. An observant eye will notice that any text-based social networking platform serves as the foundation for other social networking platforms with more complex features.
+-----------------------------------------------------------------------------------------------
 
-    Funcționalitățile aplicației client sunt:
-- La pornire, unui utilizator i se oferă posibilitatea de a se loga în contul său sau își poate crea un cont. Logarea/înregistrarea presupune introducerea numelui de utilizator.
-- Atenție: numele de utilizator trebuie să fie unic!
-- Meniul principal afișează următoarele opțiuni (funcționalități):
-- Post: utilizatorul poate face o postare text de maxim 140 de caractere;
-- Personal Profile: utilizatorul își poate vedea istoricul postărilor sale
-- Funcție de follow: utilizator poate să se “împrietenească” cu alți utilizatori. În acest fel puteți construi graful social al platformei.
-- Feed - vizualizarea de postări. Se va afișa câte o postare o dată - pentru detalii vedeți mai jos. Sub postare se vor afla următoarele opțiuni: 
-- Like sau Dislike - utilizatorul poate da like/dislike și își poate retrage reacția
-- Comment - utilizatorul poate scrie un comentariu, iar lista de comentarii va fi updatată
-- Retweet - utilizatorul va putea introduce o prefață postării sale
-- Go to referenced tweet - dacă postarea este un retweet, se va putea accesa postarea inițială
-- Keyword Search: utilizatorul introduce un query format din mai multe cuvinte cheie și se afișează postări care conțin cel puțin un keyword căutat - vedeți Inverted Index.
-- User Search: utilizatorul introduce un nume de utilizator drept query și i se afișează lista de rezultate. Un rezultat nu trebuie să fie neapărat identic cu query-ul, ci se pot afișa și valori apropiate. Pentru a compara stringuri implementați distanța Levenshtein.
+    The functionalities of the client application are as follows:
+- Upon starting, a user is given the option to log into their account or create a new account. Logging in/registering requires entering a username.
 
-----------------------------------------------------------------------------------------------
-- Networking - comunicarea dintre aplicațiile de client și server să se realizeze folosind Sockets
-- Baze de date - datele utilizate de către server vor fi manipulate folosind o bază de date
+- Attention: the username must be unique!
+
+- The main menu displays the following options (functionalities):
+
+- Post: The user can make a text post of up to 140 characters.
+
+- Personal Profile: The user can view their post history.
+
+- Follow function: The user can "follow" other users. This way, you can build the social graph of the platform.
+
+- Feed: Viewing posts. One post will be displayed at a time - see details below. Under the post, the following options will be available:
+
+- Like or Dislike: The user can like/dislike a post and can undo their reaction.
+
+- Comment: The user can write a comment, and the list of comments will be updated.
+
+- Retweet: The user can add a comment to their own post.
+
+- Go to referenced tweet: If the post is a retweet, the original post can be accessed.
+
+- Keyword Search: The user enters a query consisting of multiple keywords, and posts containing at least one of the keywords will be displayed - see Inverted Index.
+
+- User Search: The user enters a username as a query, and the result list is displayed. A result does not have to be identical to the query; approximate matches can also be displayed. To compare strings, implement the Levenshtein distance.
+
+- Networking: Communication between the client applications and the server will be done using sockets.
+
+- Databases: The data used by the server will be manipulated using a database.
